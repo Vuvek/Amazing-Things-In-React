@@ -1,0 +1,22 @@
+1) We uses two files because we don't use React only on browsers but also use on mobiles and others things like React 3d That's why they seprated both the files rather than giving one files, here ReactDom is kind of bridge which attaches the React code in HTML
+2) creating a element is a core thing of React so it's come from this React but creating a root and rendering something inside it is a job of ReactDom
+3) You know what's expensive opeation in browsers or in the web page, expensive opeation is the when DOM needs to manipulated, suppose there is web page and you hit the button and on that something need to be show on this page or hide on this, what is happening here DOM is tree is getting changed, that is the most costly thing, Removing node and adding nodes that is the most opeation.
+4) React comes with a philopshy of writing or manipuating the dom using JS only.
+5) React.createElement don't return HTML Element but it's an object, it's not a h1 tag over there but it's a object.
+6) render method is used to convert that object to h1 tag, The job render method is nothing to convert that fucking object to h1 element tag and to render on the UI(brower)
+7) When we using React.createElement It's making our life so ugly and looking code so dirty that's why JSX came into the picture.
+8) The order of files is very important because js execute code line by line.
+9) CORS (Cross Origin Resource Sharing) is an HTTP feature that enables a web application running under one domain to access resources in another domain.
+10) If we write inside div anything then it will replaced by the render method, rmember not appended replaced but at the same time you can write above or below div element anything, It will be visible to your UI and because of that React is library that it can work on small portion of HTML without affecting anything.
+
+
+Recap : 
+    1) How to write small hello world program using html.
+    2) Then how to write the same Hello world program using java script 
+    3) How can we bring react to into our code that is by using CDN and then we seprated our app.js file understand React.createElement and again same hellow world prgrams made with React.
+    4) Made Nested Element using React children and many more and we show what is React.createElement, It's a object but not HTML element.
+    5) Then we understand the power of render method i.e. It convert object to element and render it by replace all the content present in the root element.
+    6) We show that React.createElement takes three argument first is name of the tag, second one attributes and third is children, what children can passes there are two things first children could be a normal react element if you are element have multiple children then you can pass element in an array.
+    7) And We also show there is something on the top or the bottom of the page, It will affect the root only and rest of the HTML will remain same in web page.
+    8) React is just a library we show why it's a library because you can import it like a java script file into your code and it's give so much super power, you can use it in your existing web application project  no matter It's using jQuery or someting else, you need import or start using it.
+    9) React is a library but not frame work because A frame work comes with a lot's baggage along with it, React does not come with lot of baggage along with it, if it a library, if it is library we make large scale application with it, Answer is Yes.

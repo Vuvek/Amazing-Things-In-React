@@ -1,0 +1,16 @@
+# 2 Types of Routing in web apps
+  - Client Side Routing : Client-Side Routing is handled in the browser using JavaScript, resulting in faster navigation but requiring additional SEO considerations for search engine optimization.
+  
+                        1) Common in SPAs: Client-side routing is commonly used in Single-Page Applications (SPAs), where the initial HTML page is loaded, and subsequent route changes are handled dynamically in the browser.
+                        2) SEO Considerations: Client-side routing may require additional SEO efforts, such as server-side rendering (SSR), to ensure search engines can index and rank the content correctly.
+                        3) Fast Navigation: Client-side routing typically provides faster navigation between routes because it avoids full page reloads. This results in a smoother and more responsive user experience.
+                        4) URL Changes: When a user clicks on a link or enters a URL, the browser does not make a full page request to the server for each route change. Instead, JavaScript running in the browser updates the content of the current page based on the route.
+                        5) Routing Handling: In client-side routing, the routing is handled entirely on the client (user's browser) using JavaScript.
+
+  - Server Side Routing  : Server-Side Routing is managed by the web server, involves full page requests, and is inherently SEO-friendly but can be slower for navigation.
+
+                        1) Routing Handling: In server-side routing, routing is handled by the web server. When a user clicks on a link or enters a URL, the browser sends a request to the server, which then determines how to respond based on the requested URL.
+                        2) Full Page Requests: Server-side routing typically involves full page requests to the server for each route change. The server sends back an entirely new HTML page for each route.
+                        3) SEO-Friendly: Server-side routing is inherently more SEO-friendly because each route corresponds to a unique URL, and search engines can easily crawl and index the content.
+                        4) Common in Traditional Websites: Traditional multi-page websites often use server-side routing, where each page corresponds to a separate HTML file served by the server.
+                        5) Slower Navigation: Server-side routing can result in slower navigation between routes compared to client-side routing because of the full page requests and server processing.

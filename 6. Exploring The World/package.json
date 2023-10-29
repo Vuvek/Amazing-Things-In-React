@@ -1,0 +1,35 @@
+{
+  "name": "igniting-our-app",
+  "version": "1.0.0",
+  "description": "Igniting Their App From Scratch",
+  "scripts": {
+    "start": "parcel index.html --https",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "No Repo"
+  },
+  "keywords": [
+    "Igniting-App",
+    "App"
+  ],
+  "author": "Vivek Kumar",
+  "license": "ISC",
+  "devDependencies": {
+    "https-localhost": "^4.7.1",
+    "parcel": "^2.9.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-dom": "^18.2.0"
+  },
+  "browserlist": [
+    "last 2 chrome versions",
+    "last 2 Firefox versions",
+    "last 5 versions"
+  ]
+}

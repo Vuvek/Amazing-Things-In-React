@@ -1,0 +1,40 @@
+# Types of Testing (developer)
+- UNIT Testing
+- Integration Testing
+- End To End Testing - e2e Testing
+
+
+1) Unit Testing: In React, unit testing involves testing individual components in isolation. You can use testing libraries like React Testing Library, Enzyme, or the built-in testing utilities provided by tools like Jest to write tests for your React components.
+2) Integration Testing: Integration testing in React checks how different components interact with each other. You can use libraries like React Testing Library to simulate user interactions and test the behavior of your components within a controlled environment.
+3) End-to-End Testing: End-to-end testing, often done using tools like Cypress,sylenium or Puppeteer, simulates a complete user journey through your application, interacting with the actual user interface in a browser-like environment.
+
+
++ React testing library 
+    - React Testing Library builds on top of DOM Testing Library by adding APIs for working with React components.
+    - React Testing Library uses jest behind the scenes.
+* Jest 
+    - Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
+
+# Setting up Testing in our App 
+    - Install React Testing Library
+    - Installed jest 
+    - Install Babel dependencies 
+    - Configure Babele
+    - Configure parcel config file to disable default babel transpilatoin.
+    - Jest Configuration  - npx jest --init
+    - install JsDom library.
+    - Install  @babel/preset-react - to make JSX work in test cases.
+    - Include this  @babel/preset-react in babel.config.
+    - Install @testing-library/jest-dom
+
+What is JsDom 
+    - JSDOM is a library which parses and interacts with assembled HTML just like a browser. The benefit is that it isn't actually a browser. Instead, it implements web standards like browsers do. You can feed it some HTML, and it will parse that HTML.
+
+Considered as test file: 
+    Headers.test.js
+    Headers.test.test
+    Headers.spec.js
+
+
+What is dunder methods
+    In JavaScript, "dunder methods" is not a commonly used term or a standard part of the language. Instead, it seems to be a reference to special methods in other programming languages, especially in Python, where double underscores (often referred to as "dunder" for "double underscore") are used to define special methods or attributes that have a specific meaning and behavior.

@@ -1,0 +1,43 @@
+React not alone make our app fast but there are so many things that helps to make app fast means so many packages or bundler like parcel.
+1) when we did npm init then package.json file created,package.json file is basically a configuration for our npm, What ever be gave in package.json file that all is the configuration of npm.
+2) why do we need to package.json, we need package.json to manage packages, because npm manages version and all others thing so it uses pacage.json to manage all those things it's very important to manage all the packages and some we also called dependencies to those pacages.
+3) The most important package in our project is bundlers, now what is bundler, when we have these html,css,js files then our whole code need to bundled or minified or cached or compressed or cleaned to make it product ready, bundler to help us to all those things. 
+4) Job of bundler, bundler basically bundled your app, it packages your app properly so that it can be shift to production, some bundler are Webpack,Parcel,Rollup when we uses npx-create-app it uses behind the scene webpack bundler and babel.
+5) We will use parcel in this project because it easy to configure, at end job of all bundler are same but the algorithm but bundled can be different with webpack or vite but at the end work is same.  
+6) There are two type of dependencies one is dev dependencies and one normal dependencies, dev dependencies are those which only help in development process but normal dependencies also used production.
+7) What is difference between ^carat and ~tilda in package.json file, so if you are using ^ carat so it will automatically upgrade to minor version and if you are using ~tilda so it upgrade to major version, but it's always good to use ^ because if you will use ~ it can break you app.
+8) In summary, package.json lists package dependencies with minimum required versions, and package-lock.json records the exact versions installed for consistency and ~ and ^ can be used with package.json only.
+9) what is difference between npx and npm, just like npm we have npx also, when we do npm it will install that package but if we do npx it will execute that package.
+10) Fetching from CDN is a constantly operation, It makes network call to server and we can’t use offline react. It's easies to manage all our dependencies to package 
+11) type="module" is important to tell the browser that it's not simple javascript file.
+12) The code we can generate again we should not push that code to github like dist folder and .parcel-cach folder in our project because when we deploy our app we can generate these over there by commands.
+13) command to make production build npx parcel build index.html.
+14) Browser List :With Browserslist, you will cover wider audience and have smaller bundle size, we can configure browser list inside pacage.json, It depends on your requirement that what type of audience you are targeting suppose their is site for government then here we need to make 95% support for browser.
+15) Steps to create React Project with parcel bundler
+        1) npm init -y
+        2) npm i react react-dom
+        3) create index.html and App.js files.
+        2) npm i parcel
+        3) npx parcel index.html --https
+
+
+Pracel doing all thing for us  :
+        Dev Build 
+        Local Serve 
+        HMR - Hot Module Replacement 
+            Uses File Watch Algorithm - written in c++
+            Caching - Faster Build 
+        Image Optimization 
+        Minification 
+        Bundling 
+        Compress
+        Consistent hashing
+        Code splitting 
+        Differential bundling 
+        Diagnostic 
+        Error Handling
+        worker like - web worker and service worker - run in background and heavy operation
+        HTTPs
+        Tree Shaking - remove unused code for you.
+        Different builds for dev and prod
+

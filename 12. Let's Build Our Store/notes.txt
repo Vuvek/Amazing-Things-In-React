@@ -1,0 +1,7 @@
+# redux
+1) Installing @reduxjs/toolkit and react-redux
+2) Build our store 
+3) Connect our store to our app
+4) Create Slices for our app like cart slice 
+5) dispatch the action and will make actions 
+6) Selectors 

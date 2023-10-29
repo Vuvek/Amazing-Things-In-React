@@ -1,0 +1,6 @@
+1) useEffect :  - If no dependency array => useEffect is called every render.   
+                - dependency array is empty = [] => useEffect is called on initial render(just once).
+                - And if I put something in dependency then useEffect will be called every time when that dependency will changes.
+
+2) useState :   - Never declare useState inside the condition, for loops or functions react don't allow, it can create inconsistency to your programs.
+                - useState are mant to be created inside your compnent Only, try to declare useState on the top level of your component.

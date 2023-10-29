@@ -1,0 +1,29 @@
+1) It's not good to use every time npx parcel index.html so now we will make script for starting our app in developement, now in package.json npm will execute that script and at the parcel command will be execute.
+2) generally it's industry standards convention to make script for starting our app on dev and building for developement, whether it's react or any framework or library, if you don't know how to start go to package.json and scrits over there.
+3) Just like we have dom Element, In React, We have React Element kind of equivalent to html Element, but at EOD React Element is different from html element because it gives object and when render this React Element to dom it beomees html element.
+4) To Create element from React.createElment('h1',{},'Hello') is very clumsy, when React was build React.createElment was core of React,but soon React Developers realise that if we are going to create h1 tag,div and span, this is not gona work and it not a Developers freiendly.
+5) To help whole the Developers community facebook Developers created something know as JSX, JSX is js syntax which easier to create elements. JSX is not a part of React,both are different, we can build big application in React also but JSX make our life easy, JSX is kind of convention which merge both HTML and JS in file, React also try to the same thing.
+6) JSX is not HTML in JS but it's a HTML or XML like syntax and jsx is a mix of HTML like syntax and js, we can say.
+7) Is JSX a valid javascript,it's not a valid js because js doesn't come with jsx built inside it, valid js code is that, that browser can understand and js engine understand echma script and this is pure js, therefore jsx is not a valid js because browser can't understand it
+8) Now, Question comes that if js engine not able to understand jsx then why it's working, You know what because parcel is doing the things behind the scenes, even before going to this code to js engine, It's transpiled before it goes to js engine and js engine receive the code that browser can understand.
+9) JSX - Babel Transpiled beofore going to reaches to js engine and transpiling is done by parcel, parcel iiself not doing it's a kind of manager which give this job to babel of traspiling code, babel is not created by facebook, babel job is not convert jsx to React code.
+10)Note: heading and jsxHeading in App.jsx are at the end returning same thing that is React Element means Object, it another thing then later it converted into by React in html element.
+11) React.createElement convert like this behind the scenes
+        React.createElement => ReactElement - JS Object => HTMLElement(Render) 
+
+12) Babel convert like this behind the scenes
+        JSX - Babel transpiled to React.createElement => ReactElement - JS Object => HTMLElement(Render) at the end babel is also giving html element
+
+
+13) Types of React Comment
+      1) Class based component - OLD
+      2) Functional Component - NEW
+
+14) Functional Component : A function which returning React Element is called functional component or A function which returning some piece of jsx is called functional component.
+15) And if you are writing like this const heading = <h1>hello</h1>, here heading over here is itself a jsx or you can it ReactElement, Now I hope you will have understand the difference the minor difference between Functional Comment and Element.
+    so therefore you can directly pass heading into root.render(heading) but you can't directly pass functional over here like root.render(App) It will not render anything on browser, either you need to pass like root.render(<App />) which babel understand or like root.render(App())
+
+16) One thing wana tell you that HTML is not a case sensitive languge right, so if jsx allow you to write html in js file then why you can't write like this h1 or any tag in capital letter because it's not a html first of all and second thing babel understand that only component can writen with starting with capital letters, so will written like this <H1> so it will treat now <H1> as Component with some children and will give error if not found that component.
+17) Inside curly braces {}, we can write any javascript piece of code inside this curly paranthesis, I want to say one thing that before watching this episode I just believed that we can't write console.log() inside curly braces, but we can write any javascript piece of code inside curly braces, remember this very importatnt..
+18) Like you make an api call using fetch and it can also return some malcious kind of data and we are rendering it iside curly braces like {data} because inside curly braces any js code can be executed, using js attacker can read cookies,localstorage,session,all information of your laptop but JSX takes care of these injection attacks even if malicious data come from api jsx will escape it, jsx won't blindly run it, It will sanitize first then pass it-------. 
+

@@ -1,0 +1,24 @@
+Two Types of exports
+1) Default imports 
+2) Nmaed imports
+
+React Hooks : It allows you to use state and other React features without writing a class.
+(Normal Utilities Functions)
+    1) UseState()
+    2) useEffect()
+
+React fast because it keep the UI sink with data layer, because of superfull hooks.
+React keeps Ui in sink with data layer that's why it's fast
+React keeps your data layer in sink with UI.
+
+Virtual DOM: The Virtual DOM is like a lightweight copy of the actual DOM. It's a JavaScript object that React uses to keep track of the state and structure of the user interface. When your web application's state changes (e.g., due to user interaction), React updates the Virtual DOM instead of directly modifying the actual DOM.
+            Efficiency: The advantage of the Virtual DOM is that it allows React to make these comparisons and updates efficiently. It can batch multiple changes together and update the actual DOM in the most optimized way, reducing unnecessary reflows and repaints in the browser.
+
+
+React Fiber: 1) React Fiber is the underlying architecture and that makes React to work efficiently and asynchronously.
+             2) It manages the priority and scheduling of task, ensuring that the most important updates are process first. This help keeps your app responsive.
+             3) Fiber doesn't directly updates the DOM. Instead it prepares a plan (a Virtual tree) of what updates need to be made in virtual DOM.
+
+Reconciliation: 1) Reconciliation is the process that occurs after React Fiber has determined what updates need to be made in the virtual DOM.
+                2) it's responsible for comparing the current virtual Dom with the previous one and identifying the specific changes needed to updated the actual Dom.
+                3) Reconciliation is the part that results in actual Dom changes to the Dom elements. such as adding removing or updating elements.

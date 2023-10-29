@@ -1,0 +1,32 @@
+Monolythic Application : Monolithic architecture is an approach to software design where an entire application or system is built as a single.
+
+        1) Single Block: Think of a monolith as a massive, single block of software code. Everything—the user interface, application logic, and database interactions—are tightly integrated into this single piece.
+
+        2) Point-to-Point: In a monolithic system, components communicate directly with each other. There are no separate, independent services or modules. When one part of the application needs to talk to another, it does so directly, like a direct "point-to-point" connection.
+
+        3) Easy to Develop: Monolithic architectures are often easier to develop initially, especially for small to medium-sized projects. Since everything is in one place, there's less complexity in managing different parts of the system.
+
+
+Microservice Architecture : Microservices architecture is an approach to software design where an application is built as a collection of small, independent services that communicate with each other.
+
+        1) Small Building Blocks: Imagine that instead of building a single massive skyscraper (like in monolithic architecture), you're constructing a city with many small buildings. Each of these buildings serves a specific purpose.
+
+        2) Independent Services: In microservices, each small building represents an independent service. These services can be developed, deployed, and scaled independently of each other.
+
+        3) Point-to-Point Communication: Just like people in a city communicate with each other by walking or driving from one building to another, microservices communicate with each other using network calls or APIs. This communication between services is like a "point-to-point" connection, but it happens over the network.
+
+        4) Flexibility and Scalability: Microservices offer flexibility and scalability. If you need to update or expand a particular service, you can do so without affecting the entire system. It's like adding a new building to your city without tearing down the entire city.
+
+        5) Isolation: Each service is isolated from the others. This means that if one service fails or has issues, it doesn't necessarily bring down the whole system. It's similar to a power outage in one building not affecting the electricity supply in other buildings.
+
+        6) Complexity Management: While microservices provide flexibility, they also introduce complexity in terms of managing multiple services, their communication, and deployments. However, this complexity can be worth it for large and complex applications where scalability and maintainability are crucial.
+
+Approches to Load Data : 
+
+    1) Loads -> Api(500ms) -> Render -----------> This is bad approach because till 500ms our page will be frozen which will make bad user experience
+
+    2) Loads -> Render(skeleton) ->  Api -> Render ----------> This is best approach which will make good user experience. 
+
+Shimmer UI : 
+    1) Shimmer UI is a visual placeholder technique used in user interfaces to simulate content loading or data fetching by displaying animated, placeholder shimmering effects that mimic real content.
+

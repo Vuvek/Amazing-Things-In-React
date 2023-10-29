@@ -1,0 +1,34 @@
+HOC : Higher Order Components are functions that take components as input and return a new component with additional functionality.
+      They are used to share logic and behavior between multiple components.
+      HOC promotes code reusability.
+      HOC likes a wrapper that enhances the capabilities of the original component without modifying its source code.
+
+Controlled and Uncontrolled components: 
+      
+      Controlled Component:  1) The parent component has direct control over the child component's state or value.
+                                Changes to the child component's state or value are managed and controlled by the parent component through props and callbacks.
+                             2) Changes to the child component's state or value are managed and controlled by the parent component through props and callbacks 
+                             3) Controlled components are React components where the value of the form element (like an input field) is controlled by React's state.
+      
+      Uncontrolled Component:1) The parent component does not have direct control over the child component's state or value.
+                             2) The child component manages its own state, typically through the DOM, and the parent component doesn't directly influence or manipulate it. 
+                             3) Simple Explanation: Uncontrolled components are form elements where React doesn't directly manage the value. Instead, you rely on the DOM to handle and retrieve the value.
+
+
+Lifting the State Up :       
+      Lifting State Up : in React is a design pattern where you move the management of a component's state from that component to a higher-level parent component. It's done for better data sharing and control among multiple child components. 
+
+
+props drilling : Props drilling in React occurs when you have to pass props (data or functions) through multiple levels of nested components, even though some intermediary components don't actually need those props. It's like passing a baton in a relay race where each runner passes it to the next, even if some of them don't use it.
+
+
+
+Context api in React : 
+      Context API in React is a way to share data, like a global store, across all the components in your app without having to pass data through props manually at every level of your component tree.
+      Context is a part of React and at the same side Redux is external library.
+
+
+
+React Dev Tool : 
+      In simple terms, React DevTools is like a powerful microscope for React developers. It helps you see what's happening inside your React app, making it easier to identify and fix issues, understand how your components are structured, and optimize the performance of your React application.
+      You can use React DevTools in your web browser to inspect and interact with your React components, view their props and state, track component updates, and more. It's an essential tool for debugging and enhancing the development experience when working with React.

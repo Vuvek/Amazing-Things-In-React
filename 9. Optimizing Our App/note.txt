@@ -1,0 +1,31 @@
+Single Responsiblity Priniciple and Modular fashion advantages: 
+                                 1) If we Single Responsiblity Priniciple then we got so many benefits liek Reusablity
+                                 2) Maintainablity.
+                                 3) Testing (writing test cases more easy).
+                                 There is no hard and fast rule that code is following single Responsiblity Priniciple but keep your component as light as possible, so that when other see your code, Your code should be readable
+What is modular fashion means: 
+                                Modularity means you break down your code into different small small modules.
+
+We can see that one .js, one .css and one .html file, Ok, but what you can see the size of that single js have become 2mb right now and what will happen when in project there is thousands of components so it's size will be too large which can make you site slow 
+So, here you want to say that don't use bundler because bundler doing all these things for you, no my friend we must need to use bundler because bundler lot's of things for us but here then some things come into picture i.e 
+i.e called Chunking, Code Spliting, Dynamic Bundling, lazy loading, on Demand loading, Dynamic imports but all these are same thing to break down your app into smaller logical chunks.
+
+Code Spliting : 
+        1) Performance: Code splitting improves website performance by loading only necessary code initially.
+
+        2) Faster Interactivity: It enables quicker user interactions by loading code chunks on-demand.
+
+        3) Bandwidth Savings: Users with limited data plans save bandwidth as only required code is loaded.
+
+        4) Efficient Caching: Smaller code chunks are more likely to be cached, speeding up return visits.
+
+        5) Mobile Optimization: Code splitting is crucial for mobile devices, where performance is critical.
+
+        6) SEO Benefits: Faster initial loads due to code splitting can boost search engine rankings.
+
+
+Custom Hooks : 
+        Custom hooks in React are reusable functions that allow you to abstract and share stateful logic between components. 
+        They are prefixed with the word "use" (e.g., useCustomHook) and enable you to separate complex logic from your components, 
+        promoting code reusability and maintainability. Custom hooks can manage state, side effects, and more, 
+        making them a powerful tool for building modular and clean React applications.

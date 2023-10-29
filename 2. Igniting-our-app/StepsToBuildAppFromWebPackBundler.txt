@@ -1,0 +1,149 @@
+https://notepad.pw/create-app
+I need steps to setup React up using parcel please give me first - commands
+
+Certainly, here are detailed steps to create a React application without using create-react-app. This will involve manually configuring the necessary tools like Babel and Webpack:
+
+Step 1: Initialize Your Project
+
+Create a new directory for your project:
+
+mkdir my-react-app
+cd my-react-app
+Initialize a new npm project:
+
+npm init -y
+
+Step 2: Install Dependencies
+
+Install React and React DOM as project dependencies:
+
+npm install react react-dom
+
+
+
+Step 3: Create Project Files
+
+Create the necessary project files in your project directory. Here's a basic example:
+
+src/index.js: This is the entry point for your React application.
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+
+ReactDOM.render(<App />, document.getElementById('root'));
+
+
+src/App.js: This is a sample React component.
+
+import React from 'react';
+
+function App() {
+  return (
+    <div>
+      <h1>Hello, React!</h1>
+    </div>
+  );
+}
+
+export default App;
+
+
+public/index.html: This is your HTML template.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My React App</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="../src/index.js"></script>
+</body>
+</html>
+
+
+
+Step 4: Configure Babel
+
+Install Babel and necessary presets and plugins:
+
+npm install @babel/core @babel/preset-env @babel/preset-react babel-loader --save-dev
+Create a .babelrc configuration file in your project root directory:
+
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"]
+}
+
+
+Step 5: Configure Webpack
+
+Install Webpack and related packages:
+
+npm install webpack webpack-cli webpack-dev-server html-webpack-plugin --save-dev
+Create a webpack.config.js configuration file in your project root directory:
+
+javascript
+Copy code
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+module.exports = {
+  entry: './src/index.js',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js',
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+        },
+      },
+    ],
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: 'public/index.html',
+    }),
+  ],
+};
+
+
+
+Step 6: Development Server (Optional)
+
+To set up a development server with hot-reloading, you can add the following to your package.json:
+
+"scripts": {
+  "start": "webpack-dev-server --mode development --open"
+}
+
+
+Step 7: Start Your Development Server
+
+Start your development server:
+
+npm start
+You can now access your React application at http://localhost:8080 (or another port if 8080 is already in use).
+
+
+
+Step 8: Production Build (Optional)
+
+To create a production-ready build of your React application, you can add the following to your package.json:
+
+"scripts": {
+  "build": "webpack --mode production"
+}
+Build your application for production:
+
+npm run build
+This will generate an optimized production build in a dist directory.
+
+You've now set up a React application manually without using create-react-app. This approach gives you more control over the configuration of tools like Babel and Webpack but requires more manual setup compared to using create-react-app.

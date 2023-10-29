@@ -1,0 +1,4 @@
+1) Props are nothing but properties which passed in the same way as arguments passes to the functions.
+2) "config-driven UI" refers to a user interface (UI) design approach where the layout, behavior, and appearance of the user interface elements are primarily determined by a configuration or set of parameters rather than being hard-coded in the application's source code. In other words, the UI is defined and controlled by external configuration files, data structures, or settings.
+3) In React Js key is a special attribute used when rendering a list of elements. It helps React to identify each element in the list. Making updates efficiently.
+

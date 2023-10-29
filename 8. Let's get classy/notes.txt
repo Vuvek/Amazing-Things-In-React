@@ -1,0 +1,50 @@
+                        - Parent Constructor
+                        - Parent Render
+Render Phase
+(Pures and no side          - Child-1 Constructor
+effects )                   - Child-1 Render 
+                            
+                            - child-2 Constructor
+                            - Child-2 Render
+--------------------------------------------------------------------------------
+                            < DOM updated - in single batch >
+Commit Phase
+(Cun work with Dom and run   - Child-1 componentDidMount
+side effects)                - child-2 componentDidMount
+
+                        - Parent componentDidMount
+
+
+
+
+------------------ Mounting ------------------------------------------------------ 
+Constructor (dummy data)
+Render (dummy data)
+        <HTML Dummy >
+Component Did Mount
+        <Api Calls>
+        <this.setState> -> State variable is updated
+
+
+and when mounting cycle is finished this.setState is called and it triggered the reconcillation process and update cycle
+
+----------------- Update Cycle ------------------------------------------------------
+
+                        -Render (Api Data) 
+                        -<HTML (is loaded with new API data)>
+
+
+
+Parent Constructor
+About.jsx:17 Parent Rendered is Called
+UserClass.jsx:12 VuvekChild Constructor Vuvek
+UserClass.jsx:50 Vuvek Child Rendered Vuvek
+UserClass.jsx:12 VikasChild Constructor Vikas
+UserClass.jsx:50 Vikas Child Rendered Vikas
+UserClass.jsx:26 VuvekChild ComponentDidMount Vuvek
+UserClass.jsx:26 VikasChild ComponentDidMount Vikas
+About.jsx:13 Parent ComponentDidMount
+UserClass.jsx:50 Vuvek Child Rendered Vuvek
+UserClass.jsx:50 Vikas Child Rendered Vikas
+UserClass.jsx:31 Vuvek I am updated Vuvek
+UserClass.jsx:31 Vikas I am updated Vikas
